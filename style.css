@@ -9,8 +9,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
 
-/* COLOURS AND FONTS */
-
+/*** COLOURS AND FONTS ***/
 /* #0050FF #F6F9FB #777 #FFF */
 
 /* *{border: #fff 1px solid;} */
@@ -58,12 +57,7 @@ margin: 0 auto;
 width: 95%;
 }
 
-/* HEADER */
-
-header{
-    height: 100vh;
-    background: #FF5120;
-}
+/* BODY */
 
 body p::selection,
 h1::selection,
@@ -208,6 +202,11 @@ body ul li:hover a{
 
 
   @media only screen and (max-width: 550px) {
+
+    h1:hover{
+        font-variation-settings: "wdth" 50, "wght" 300; 
+    }
+    
     body ul li{
         border: none;
         padding:0 10px 0 0;
@@ -216,6 +215,14 @@ body ul li:hover a{
 
     body ul li a{
         text-decoration: underline;
+    }
+
+    body ul li:hover{
+        background: none;
+    }
+
+    body ul li:hover a{
+        color: #000;
     }
 }
 
@@ -236,6 +243,10 @@ body ul li:hover a{
         font-size: 6rem;
         line-height: 5.5rem;
         letter-spacing: 0;
+    }
+
+    h1:hover{
+        font-variation-settings: "wdth" 75, "wght" 300; 
     }
 
     .intro{
@@ -266,5 +277,14 @@ body ul li:hover a{
 
     .copyright{
         left: 15px;
+    }
+  }
+
+
+
+  @media only screen and (max-width: 410px) {
+
+    h1:hover{
+        font-variation-settings: "wdth" 0, "wght" 300; 
     }
   }
