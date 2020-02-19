@@ -11,3 +11,6 @@ Updated HTML
 
 Updated CSS
 - Fixed bugs on mobile views
+
+## Feb 18
+Added sitemap XML file for Google Search Console
