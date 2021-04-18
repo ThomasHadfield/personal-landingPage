@@ -57,7 +57,7 @@ h1{
     font-variation-settings: 'wght' 400, 'wdth' 100; /* use to change font-weight/width */
 
     font-size: 18rem;
-    line-height: 16rem;
+    line-height: 15rem;
     font-weight: normal;
     color: #fff;
     text-transform: uppercase;
@@ -70,11 +70,11 @@ h2{
     font-variation-settings: "wdth" 100, "wght" 400;
     font-weight: normal;
     letter-spacing: 0.05em;
-    font-size: 2.2rem;
-    line-height: 3rem;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
     color: #fff;
     margin-top: 50px;
-    padding-top: 10px;
+    padding-top: 5px;
     border-top: 1px #fff solid;
 }
 
@@ -84,14 +84,14 @@ h2{
     font-weight: normal;
     letter-spacing: 0.05em;
     font-size: 1.8rem;
-    line-height: 2.8rem;
+    line-height: 2.4rem;
     color: #fff;
     margin-top: 50px;
-    padding-top: 10px;
+    padding-top: 5px;
     border-top: 1px #fff solid;
 }
 
-footer ul li a{
+ul li a{
     font-family: "studiofeixen-variable";
     font-variation-settings: "wdth" 100, "wght" 400;
     font-weight: normal;
@@ -105,8 +105,8 @@ footer ul li a{
 .copyright{
     font-family: "studiofeixen-variable";
     font-variation-settings: "wdth" 100, "wght" 400; 
-    font-size: 1.8rem;
-    letter-spacing: 0.05em;
+    font-size: 1.4rem;
+    letter-spacing: 0.06em;
     color: #fff;
     margin-bottom: 10px;
 }
@@ -117,7 +117,7 @@ footer ul li a{
 
 /* GLOBAL */
 body{
-    background: #005Aff;
+    background: #005aff;
 }
 
 .wrapper{
@@ -130,6 +130,33 @@ width: 98%;
 /* HEADER */
 header{
     margin-top: 10px;
+}
+
+nav{
+    padding-top: 10px;
+    border-top: 1px #fff solid;
+    display: flex;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0
+}
+
+ul li{
+    list-style: none;
+    margin: 0 15px 10px 0;
+    border: 1px #fff solid;
+    border-radius: 50px;
+    padding: 8px 16px;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+}
+
+ul li:hover{
+    opacity:50%;
 }
 
 h2 a{
@@ -152,28 +179,6 @@ footer{
     bottom: 0;
 }
 
-footer ul{
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
-    padding: 0;
-}
-
-footer ul li{
-    list-style: none;
-    margin-right: 30px;
-    margin-bottom: 10px;
-    border: 1px #fff solid;
-    border-radius: 50px;
-    padding: 10px 20px;
-    transition-property: opacity;
-    transition-duration: 0.3s;
-}
-
-footer ul li:hover{
-    opacity:50%;
-}
-
 
 
 
@@ -183,10 +188,6 @@ footer ul li:hover{
     h1{
         font-size: 13rem;
         line-height: 11rem;
-    }
-
-    footer ul li{
-        margin-right: 20px;
     }
   }
 
@@ -198,10 +199,6 @@ footer ul li:hover{
         font-size: 11rem;
         line-height: 10rem;
     }
-
-    footer ul li{
-        margin-right: 20px;
-    }
   }
 
 
@@ -211,15 +208,6 @@ footer ul li:hover{
     h1{
         font-size: 8rem;
         line-height: 7rem;
-    }
-    
-    footer ul li{
-        border: none;
-        padding: 0;
-    }
-
-    footer ul li a{
-        text-decoration: underline;
     }
 }
 
@@ -234,19 +222,22 @@ footer ul li:hover{
     h1{
         font-size: 6rem;
         line-height: 5.5rem;
+        margin-bottom: 50px;
     }
 
     h2{
         font-size: 1.8rem;
         line-height: 2.8rem;
+        margin-top: 30px;
     }
 
     .description{
         font-size: 1.6rem;
         line-height: 2.6rem;
+        margin-top: 30px;
     }
 
-    footer ul li a{
+    ul li a{
         font-size: 1.6rem;
         line-height: 2.6rem;
     }
@@ -263,10 +254,5 @@ footer ul li:hover{
     h1{
         font-size: 4.8rem;
         line-height: 4.5rem;
-        margin-bottom: 50px;
-    }
-
-    .description{
-        margin-top: 30px;
     }
   }
