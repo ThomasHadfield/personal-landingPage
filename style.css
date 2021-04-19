@@ -50,7 +50,7 @@ html {
 
 h1{
     font-family: 'studiofeixen-variable';
-    letter-spacing: -0.05em; /* adjust letter spacing depending on font size */
+    letter-spacing: -0.06em; /* adjust letter spacing depending on font size */
     word-spacing: -0.1em; /* adjust word spacing depending on font size */
     -webkit-font-smoothing: antialiased; /* looks better */
     -moz-osx-font-smoothing: grayscale; /* looks better */
@@ -75,7 +75,21 @@ ul li a{
     color: #fff;
 }
 
-h2,
+h2{
+    font-family: "studiofeixen-variable";
+    font-variation-settings: "wdth" 100, "wght" 700;
+    font-weight: normal;
+    letter-spacing: 0.06em;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: #fff;
+    margin: 0 150px 0 0;
+    text-transform: uppercase;
+    width: 50px;
+    padding: 0 50px 0 0;
+
+}
+
 .description{
     font-family: "studiofeixen-variable";
     font-variation-settings: "wdth" 100, "wght" 400;
@@ -108,31 +122,29 @@ body{
 .wrapper{
 margin: 0 auto;
 width: 98%;
+height: 100%;
+min-height: 100%;
 }
 
 
 
 /* HEADER */
 header{
-    margin-top: 10px;
-}
-
-nav{
-    padding-top: 10px;
-    border-top: 1px #fff solid;
+    margin: 10px 0 0 0;
 }
 
 section{
     padding-top: 5px;
     border-top: 1px #fff solid;
     margin-top: 50px;
+    display: flex;
 }
 
 ul{
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    margin: 0
+    margin: 5px 0 0 0;
 }
 
 ul li{
@@ -149,14 +161,14 @@ ul li:hover{
     opacity:50%;
 }
 
-h2 a{
+.description a{
     text-decoration: underline;
     color: #fff;
     transition-property: opacity;
     transition-duration: 0.3s;
 }
 
-h2 a:hover{
+.description a:hover{
     opacity: 50%;
 }
 
@@ -215,7 +227,17 @@ footer{
         margin-bottom: 50px;
     }
 
-    h2,
+    section{
+        margin-top: 30px;
+    }
+
+    h2{
+        font-size: 1.2rem;
+        margin: 0;
+        width: 100px;
+        padding: 0 50px 0 0;
+    }
+
     .description{
         font-size: 1.6rem;
         line-height: 2.6rem;
@@ -239,4 +261,10 @@ footer{
         font-size: 4.8rem;
         line-height: 4.5rem;
     }
+
+    footer{
+        margin: 60px 0 0 0;
+        position: relative;
+    }
+    
   }
